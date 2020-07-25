@@ -59,7 +59,8 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "d8:01:9e:d9:ab:88:54:54:62:78:fd:29:ff:b5:e3:03"
+            #- "d8:01:9e:d9:ab:88:54:54:62:78:fd:29:ff:b5:e3:03"
+            - "IcFXfHgh42HvcZiG/zQmle+IjD4lrUu4XV+469JheJE"
       - checkout
       - run:
           name: Fabricを使ってデプロイを実行する

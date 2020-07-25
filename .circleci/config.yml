@@ -62,7 +62,7 @@ jobs:
           name: Fabricを使ってデプロイを実行する
           # https://pypi.org/project/Fabric3/
           command: |
-            pip install fabric3　--user
+            pip install --user fabric3 
             fab -f .circleci/fabfile.py -i ~/.ssh/id_rsa
 
 workflows:

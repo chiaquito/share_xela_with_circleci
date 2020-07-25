@@ -67,7 +67,7 @@ jobs:
           command: |
             pip install --user fabric3 
             #fab deploy -f .circleci/fabfile.py -i ~/.ssh/id_rsa
-            fab deploy
+            fab deploy -f .circleci/fabfile.py
 
 workflows:
   version: 2

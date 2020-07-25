@@ -12,7 +12,7 @@ env.use_ssh_config = False
 env.user = 'chiaki'
 env.port = '21345'
 
-env.key_filename = '~/.ssh/id_rsa'
+#env.key_filename = '~/.ssh/id_rsa'
 #env.key_filename = '~/.ssh/circle_ci'
 
 

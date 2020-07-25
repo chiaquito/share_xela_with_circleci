@@ -14,7 +14,6 @@ import os
 import environ 
 
 
-
 env_dir  = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 env_file = os.path.join(env_dir, ".env")
 env = environ.Env()
@@ -137,17 +136,7 @@ DATABASES = {
 
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': os.environ.get("DATABASE_ENGINE"),
-        'NAME': os.environ.get("DATABASE_DB"),
-        'PORT': os.environ.get("DATABASE_PORT"),
-        'USER': os.environ.get("DATABASE_USER"),
-        'HOST': os.environ.get('DATABASE_HOST', default='localhost'),
-        'PASSWORD': os.environ.get("DATABASE_PASSWORD"),
-        'TEST':{"NAME" : "test_postgis_db"},
-    }
-}
+
 
 
 

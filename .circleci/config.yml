@@ -57,6 +57,9 @@ jobs:
       - image: circleci/python:3.8.0
     working_directory: ~/app
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "d8:01:9e:d9:ab:88:54:54:62:78:fd:29:ff:b5:e3:03"
       - checkout
       - run:
           name: Fabricを使ってデプロイを実行する
